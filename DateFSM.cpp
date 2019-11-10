@@ -8,11 +8,13 @@ const int DateFSM::STATE_SLASH = 3;
 const int DateFSM::STATE_DATE = 4;
 const int DateFSM::STATE_INVALID = 5;
 
-DateFSM::DateFSM() {
+DateFSM::DateFSM() 
+{
 	reset();
 }
 
-void DateFSM::set(char input) {
+void DateFSM::set(char input) 
+{
 	int state = getState();
 	
 	// Checking for non-digit states
@@ -76,8 +78,9 @@ void DateFSM::set(char input) {
 	}
 }
 
-void DateFSM::reset() {
-	setState(DateFSM::STATE_YEAR);
+void DateFSM::reset() 
+{
+	setState(STATE_YEAR);
 	i = 0;
 }
 
