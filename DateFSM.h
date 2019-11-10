@@ -19,7 +19,7 @@ class DateFSM : public FSM
 		
 		DateFSM();
 		
-		void set(char input);
+		void set(char);
 		void reset();
 		
 };

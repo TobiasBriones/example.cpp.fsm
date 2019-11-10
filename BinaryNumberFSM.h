@@ -1,17 +1,20 @@
 #include "FSM.h"
 
-class PasswordFSM : public FSM
+class BinaryNumberFSM : public FSM
 {
 	
-	public:
-		static const int STATE_INITIAL;
-		static const int STATE_S1;
-		static const int STATE_S2;
-		static const int STATE_S3;
-		static const int STATE_INVALID;
-		static const int STATE_VALID;
+	private:
+		bool isBinaryDigit(char);
 		
-		PasswordFSM();
+	public:
+		static const int STATE_S0;
+		static const int STATE_S1;
+		static const int STATE_DOT;
+		static const int STATE_S3;
+		static const int STATE_VALID;
+		static const int STATE_INVALID;
+		
+		BinaryNumberFSM();
 		
 		void set(char);
 		void reset();
