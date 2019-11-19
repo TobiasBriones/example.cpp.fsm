@@ -55,5 +55,23 @@
     <Image Include="Assets\App_Screenshot.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Assets\Algorithms\Date Algorithm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Algorithms\Date FSM part 1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Algorithms\Date FSM part 2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Algorithms\Hexadecimal FSM.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Algorithms\Password FSM.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Algorithms\Binary Number FSM.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

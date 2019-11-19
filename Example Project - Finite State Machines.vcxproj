@@ -118,6 +118,12 @@
     <ClInclude Include="Src\fsm\PasswordFSM.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Assets\Algorithms\Binary Number FSM.png" />
+    <Image Include="Assets\Algorithms\Date Algorithm.png" />
+    <Image Include="Assets\Algorithms\Date FSM part 1.png" />
+    <Image Include="Assets\Algorithms\Date FSM part 2.png" />
+    <Image Include="Assets\Algorithms\Hexadecimal FSM.png" />
+    <Image Include="Assets\Algorithms\Password FSM.png" />
     <Image Include="Assets\App_Screenshot.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
