@@ -76,9 +76,6 @@
     <Image Include="Assets\Icon.ico">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="..\..\..\..\..\..\..\App_Screenshot.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="Assets\App_Screenshot.png">
       <Filter>Resource Files</Filter>
     </Image>

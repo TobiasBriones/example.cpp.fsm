@@ -124,7 +124,6 @@
     <ClInclude Include="Src\fsm\PasswordFSM.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\..\..\..\App_Screenshot.png" />
     <Image Include="Assets\Algorithms\Binary Number FSM.png" />
     <Image Include="Assets\Algorithms\Date Algorithm.png" />
     <Image Include="Assets\Algorithms\Date FSM part 1.png" />
