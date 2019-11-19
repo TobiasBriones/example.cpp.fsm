@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
 	// End of Date Algorithm
 
 
-	cout << "Enter a valid password [0-9][A-Z]+\*|# (that regex is not checked yet!)" << endl; // Check the regex
+	cout << "Enter a valid password [0-9][A-Z]+(#|\*)" << endl;
 	cin >> str;
 
 	// Password FSM
@@ -72,6 +72,7 @@ void runDateAlgorithm(string dateStr)
 	if (dateStr.length() != DateFSM::DATE_LENGTH)
 	{
 		showOutput(false, "date");
+		return;
 	}
 	DateFSM* dateFSM = new DateFSM();
 	int i = 0;
