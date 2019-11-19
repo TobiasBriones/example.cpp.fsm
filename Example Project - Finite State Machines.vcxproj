@@ -98,19 +98,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BinaryNumberFSM.cpp" />
-    <ClCompile Include="DateFSM.cpp" />
-    <ClCompile Include="FSM.cpp" />
-    <ClCompile Include="HexadecimalNumberFSM.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="PasswordFSM.cpp" />
+    <ClCompile Include="Src\fsm\BinaryNumberFSM.cpp" />
+    <ClCompile Include="Src\fsm\DateFSM.cpp" />
+    <ClCompile Include="Src\fsm\FSM.cpp" />
+    <ClCompile Include="Src\fsm\HexadecimalNumberFSM.cpp" />
+    <ClCompile Include="Src\Main.cpp" />
+    <ClCompile Include="Src\fsm\PasswordFSM.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BinaryNumberFSM.h" />
-    <ClInclude Include="DateFSM.h" />
-    <ClInclude Include="FSM.h" />
-    <ClInclude Include="HexadecimalNumberFSM.h" />
-    <ClInclude Include="PasswordFSM.h" />
+    <ClInclude Include="Src\fsm\BinaryNumberFSM.h" />
+    <ClInclude Include="Src\fsm\DateFSM.h" />
+    <ClInclude Include="Src\fsm\FSM.h" />
+    <ClInclude Include="Src\fsm\HexadecimalNumberFSM.h" />
+    <ClInclude Include="Src\fsm\PasswordFSM.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

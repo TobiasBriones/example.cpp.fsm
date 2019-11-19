@@ -15,39 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BinaryNumberFSM.cpp">
+    <ClCompile Include="Src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DateFSM.cpp">
+    <ClCompile Include="Src\fsm\BinaryNumberFSM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FSM.cpp">
+    <ClCompile Include="Src\fsm\DateFSM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HexadecimalNumberFSM.cpp">
+    <ClCompile Include="Src\fsm\FSM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PasswordFSM.cpp">
+    <ClCompile Include="Src\fsm\HexadecimalNumberFSM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="Src\fsm\PasswordFSM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BinaryNumberFSM.h">
+    <ClInclude Include="Src\fsm\BinaryNumberFSM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DateFSM.h">
+    <ClInclude Include="Src\fsm\DateFSM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FSM.h">
+    <ClInclude Include="Src\fsm\FSM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="HexadecimalNumberFSM.h">
+    <ClInclude Include="Src\fsm\HexadecimalNumberFSM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PasswordFSM.h">
+    <ClInclude Include="Src\fsm\PasswordFSM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

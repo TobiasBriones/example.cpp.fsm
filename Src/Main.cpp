@@ -7,10 +7,10 @@
 
 #include <iostream>
 #include <string>
-#include "DateFSM.h"
-#include "PasswordFSM.h"
-#include "BinaryNumberFSM.h"
-#include "HexadecimalNumberFSM.h"
+#include "fsm/DateFSM.h"
+#include "fsm/PasswordFSM.h"
+#include "fsm/BinaryNumberFSM.h"
+#include "fsm/HexadecimalNumberFSM.h"
 
 using std::string;
 using std::cout;
