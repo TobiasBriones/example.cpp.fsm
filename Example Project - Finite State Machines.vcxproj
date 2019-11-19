@@ -99,7 +99,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>NotSet</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <SubSystem>NotSet</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -111,6 +116,7 @@
     <ClCompile Include="Src\fsm\PasswordFSM.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Resources\resource.h" />
     <ClInclude Include="Src\fsm\BinaryNumberFSM.h" />
     <ClInclude Include="Src\fsm\DateFSM.h" />
     <ClInclude Include="Src\fsm\FSM.h" />
@@ -125,6 +131,13 @@
     <Image Include="Assets\Algorithms\Hexadecimal FSM.png" />
     <Image Include="Assets\Algorithms\Password FSM.png" />
     <Image Include="Assets\App_Screenshot.png" />
+    <Image Include="Assets\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resource.aps" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -56,6 +56,7 @@ int main(int argc, char** argv) {
 	// End of Hexadecimal number FSM
 
 	cout << "End of the program" << endl;
+	system("pause");
 	return 0;
 }
 
