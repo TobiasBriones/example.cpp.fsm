@@ -25,36 +25,36 @@ void runHexadecimalNumberFSM(string);
 
 int main(int argc, char** argv) {
 	string str;
-	
+
 	cout << "Enter a valid date YYYY/MM/DD" << endl;
 	cin >> str;
-	
+
 	// Date Algorithm
 	runDateAlgorithm(str);
 	// End of Date Algorithm
-	
-	
+
+
 	cout << "Enter a valid password [0-9][A-Z]+\*|# (that regex is not checked yet!)" << endl; // Check the regex
 	cin >> str;
-	
+
 	// Password FSM
 	runPasswordFSM(str);
 	// End of Password FSM
-	
-	
+
+
 	cout << "Enter a binary number" << endl;
 	cin >> str;
 	// Binary number FSM
 	runBinaryNumberFSM(str);
 	// End of Binary number FSM
-	
-	
+
+
 	cout << "Enter an hexadecimal number" << endl;
 	cin >> str;
 	// Hexadecimal number FSM
 	runHexadecimalNumberFSM(str);
 	// End of Hexadecimal number FSM
-	
+
 	return 0;
 }
 
@@ -93,15 +93,15 @@ void runDateAlgorithm(string dateStr)
 
 void runPasswordFSM(string pwd)
 {
-	PasswordFSM *pwdFSM = new PasswordFSM();
+	PasswordFSM* pwdFSM = new PasswordFSM();
 	int i = 0;
-	
-	while(i < pwd.length())
+
+	while (i < pwd.length())
 	{
 		pwdFSM->set(pwd[i]);
-		
+
 		// Early exit if invalid password
-		if(pwdFSM->getState() == PasswordFSM::STATE_INVALID)
+		if (pwdFSM->getState() == PasswordFSM::STATE_INVALID)
 		{
 			break;
 		}
@@ -114,15 +114,15 @@ void runPasswordFSM(string pwd)
 
 void runBinaryNumberFSM(string str)
 {
-	BinaryNumberFSM *binaryFSM = new BinaryNumberFSM();
+	BinaryNumberFSM* binaryFSM = new BinaryNumberFSM();
 	int i = 0;
-	
-	while(i < str.length())
+
+	while (i < str.length())
 	{
 		binaryFSM->set(str[i]);
-		
+
 		// Early exit if invalid binary number
-		if(binaryFSM->getState() == BinaryNumberFSM::STATE_INVALID)
+		if (binaryFSM->getState() == BinaryNumberFSM::STATE_INVALID)
 		{
 			break;
 		}
@@ -135,15 +135,15 @@ void runBinaryNumberFSM(string str)
 
 void runHexadecimalNumberFSM(string str)
 {
-	HexadecimalNumberFSM *hexFSM = new HexadecimalNumberFSM();
+	HexadecimalNumberFSM* hexFSM = new HexadecimalNumberFSM();
 	int i = 0;
-	
-	while(i < str.length())
+
+	while (i < str.length())
 	{
 		hexFSM->set(str[i]);
-		
+
 		// Early exit if invalid binary number
-		if(hexFSM->getState() == HexadecimalNumberFSM::STATE_INVALID)
+		if (hexFSM->getState() == HexadecimalNumberFSM::STATE_INVALID)
 		{
 			break;
 		}

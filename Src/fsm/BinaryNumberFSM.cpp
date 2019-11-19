@@ -29,47 +29,47 @@ bool BinaryNumberFSM::isBinaryDigit(char ch)
 
 void BinaryNumberFSM::set(char input)
 {
-	switch(getState())
+	switch (getState())
 	{
-		case STATE_S0:
-			if(isBinaryDigit(input))
-			{
-				setState(STATE_S1);
-			}
-			else
-			{
-				setState(STATE_INVALID);
-			}
-			break;
-			
-		case STATE_S1:
-			if(input == '.')
-			{
-				setState(STATE_DOT);
-			}
-			else if(!isBinaryDigit(input))
-			{
-				setState(STATE_INVALID);
-			}
-			break;
-			
-		case STATE_DOT:
-			if(isBinaryDigit(input))
-			{
-				setState(STATE_S3);
-			}
-			else
-			{
-				setState(STATE_INVALID);
-			}
-			break;
-			
-		case STATE_S3:
-			if(!isBinaryDigit(input))
-			{
-				setState(STATE_INVALID);
-			}
-			break;
+	case STATE_S0:
+		if (isBinaryDigit(input))
+		{
+			setState(STATE_S1);
+		}
+		else
+		{
+			setState(STATE_INVALID);
+		}
+		break;
+
+	case STATE_S1:
+		if (input == '.')
+		{
+			setState(STATE_DOT);
+		}
+		else if (!isBinaryDigit(input))
+		{
+			setState(STATE_INVALID);
+		}
+		break;
+
+	case STATE_DOT:
+		if (isBinaryDigit(input))
+		{
+			setState(STATE_S3);
+		}
+		else
+		{
+			setState(STATE_INVALID);
+		}
+		break;
+
+	case STATE_S3:
+		if (!isBinaryDigit(input))
+		{
+			setState(STATE_INVALID);
+		}
+		break;
 	}
 }
 
@@ -80,22 +80,22 @@ void BinaryNumberFSM::reset()
 
 void BinaryNumberFSM::setFinished()
 {
-	switch(getState())
+	switch (getState())
 	{
-		case STATE_S0:
-			setState(STATE_INVALID);
-			break;
-			
-		case STATE_S1:
-			setState(STATE_VALID);
-			break;
-			
-		case STATE_DOT:
-			setState(STATE_INVALID);
-			break;
-			
-		case STATE_S3:
-			setState(STATE_VALID);
-			break;
+	case STATE_S0:
+		setState(STATE_INVALID);
+		break;
+
+	case STATE_S1:
+		setState(STATE_VALID);
+		break;
+
+	case STATE_DOT:
+		setState(STATE_INVALID);
+		break;
+
+	case STATE_S3:
+		setState(STATE_VALID);
+		break;
 	}
 }

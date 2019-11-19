@@ -22,44 +22,44 @@ PasswordFSM::PasswordFSM()
 
 void PasswordFSM::set(char input)
 {
-	switch(getState())
+	switch (getState())
 	{
-		case STATE_INITIAL:
-			if(isdigit(input))
-			{
-				setState(STATE_S1);
-			}
-			else
-			{
-				setState(STATE_INVALID);
-			}
-			break;
-			
-		case STATE_S1:
-			if(input == toupper(input))
-			{
-				setState(STATE_S2);
-			}
-			else
-			{
-				setState(STATE_INVALID);
-			}
-			break;
-			
-		case STATE_S2:
-			if(input == '#' || input == '*')
-			{
-				setState(STATE_S3);
-			}
-			else if(input != toupper(input))
-			{
-				setState(STATE_INVALID);
-			}
-			break;
-			
-		case STATE_S3:
+	case STATE_INITIAL:
+		if (isdigit(input))
+		{
+			setState(STATE_S1);
+		}
+		else
+		{
 			setState(STATE_INVALID);
-			break;
+		}
+		break;
+
+	case STATE_S1:
+		if (input == toupper(input))
+		{
+			setState(STATE_S2);
+		}
+		else
+		{
+			setState(STATE_INVALID);
+		}
+		break;
+
+	case STATE_S2:
+		if (input == '#' || input == '*')
+		{
+			setState(STATE_S3);
+		}
+		else if (input != toupper(input))
+		{
+			setState(STATE_INVALID);
+		}
+		break;
+
+	case STATE_S3:
+		setState(STATE_INVALID);
+		break;
 	}
 }
 
@@ -70,7 +70,7 @@ void PasswordFSM::reset()
 
 void PasswordFSM::setFinished()
 {
-	if(getState() == STATE_S3)
+	if (getState() == STATE_S3)
 	{
 		setState(STATE_VALID);
 	}
