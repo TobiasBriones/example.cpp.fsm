@@ -26,7 +26,7 @@ void runHexadecimalNumberFSM(string);
 int main(int argc, char** argv) {
 	string str;
 
-	cout << "Enter a valid date YYYY/MM/DD" << endl;
+	cout << "Enter a valid date YYYY/MM/DD" << endl << ">> ";
 	cin >> str;
 
 	// Date Algorithm
@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
 	// End of Date Algorithm
 
 
-	cout << "Enter a valid password [0-9][A-Z]+(#|\*)" << endl;
+	cout << "Enter a valid password [0-9][A-Z]+(#|\*)" << endl << ">> ";
 	cin >> str;
 
 	// Password FSM
@@ -42,19 +42,20 @@ int main(int argc, char** argv) {
 	// End of Password FSM
 
 
-	cout << "Enter a binary number" << endl;
+	cout << "Enter a binary number" << endl << ">> ";
 	cin >> str;
 	// Binary number FSM
 	runBinaryNumberFSM(str);
 	// End of Binary number FSM
 
 
-	cout << "Enter an hexadecimal number" << endl;
+	cout << "Enter an hexadecimal number" << endl << ">> ";
 	cin >> str;
 	// Hexadecimal number FSM
 	runHexadecimalNumberFSM(str);
 	// End of Hexadecimal number FSM
 
+	cout << "End of the program" << endl;
 	return 0;
 }
 
