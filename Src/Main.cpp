@@ -17,6 +17,7 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+void showOutput(bool, string);
 void runDateAlgorithm(string);
 void runPasswordFSM(string);
 void runBinaryNumberFSM(string);
@@ -33,7 +34,7 @@ int main(int argc, char** argv) {
 	// End of Date Algorithm
 	
 	
-	cout << "Enter a valid password [0-9][A-Z]+\*|#" << endl; // Check the regex
+	cout << "Enter a valid password [0-9][A-Z]+\*|# (that regex is not checked yet!)" << endl; // Check the regex
 	cin >> str;
 	
 	// Password FSM
@@ -57,40 +58,38 @@ int main(int argc, char** argv) {
 	return 0;
 }
 
-void runDateAlgorithm(string dateStr)
+void showOutput(bool value, string concat)
 {
-	DateFSM *dateFSM = new DateFSM();
-	int i = 0;
-	
-	if(dateStr.length() == DateFSM::DATE_LENGTH)
-	{
-		while(i < dateStr.length())
-		{
-			dateFSM->set(dateStr[i]);
-			
-			// Early exit if invalid date
-			if(dateFSM->getState() == DateFSM::STATE_INVALID)
-			{
-				break;
-			}
-			i++;
-		}
-		if(dateFSM->getState() == DateFSM::STATE_DATE)
-		{
-			cout << "Correct date" << endl;
-		}
-		else
-		{
-			cout << "Invalid date" << endl << endl;
-		}
-	}
-	else
-	{
-		cout << "Invalid date" << endl << endl;
-	}
-	delete dateFSM;
+	string str = "";
+
+	str += value ? "Valid " : "Invalid ";
+	str += concat;
+	cout << str << endl << endl;
 }
 
+void runDateAlgorithm(string dateStr)
+{
+	if (dateStr.length() != DateFSM::DATE_LENGTH)
+	{
+		showOutput(false, "date");
+	}
+	DateFSM* dateFSM = new DateFSM();
+	int i = 0;
+
+	while (i < dateStr.length())
+	{
+		dateFSM->set(dateStr[i]);
+
+		// Early exit if invalid date
+		if (dateFSM->getState() == DateFSM::STATE_INVALID)
+		{
+			break;
+		}
+		i++;
+	}
+	showOutput(dateFSM->getState() == DateFSM::STATE_DATE, "date");
+	delete dateFSM;
+}
 
 void runPasswordFSM(string pwd)
 {
@@ -109,14 +108,7 @@ void runPasswordFSM(string pwd)
 		i++;
 	}
 	pwdFSM->setFinished();
-	if(pwdFSM->getState() == PasswordFSM::STATE_VALID)
-	{
-		cout << "Valid password" << endl << endl;
-	}
-	else
-	{
-		cout << "Invalid password" << endl << endl;
-	}
+	showOutput(pwdFSM->getState() == PasswordFSM::STATE_VALID, "password");
 	delete pwdFSM;
 }
 
@@ -137,14 +129,7 @@ void runBinaryNumberFSM(string str)
 		i++;
 	}
 	binaryFSM->setFinished();
-	if(binaryFSM->getState() == BinaryNumberFSM::STATE_VALID)
-	{
-		cout << "Valid binary number" << endl << endl;
-	}
-	else
-	{
-		cout << "Invalid binary number" << endl << endl;
-	}
+	showOutput(binaryFSM->getState() == BinaryNumberFSM::STATE_VALID, "binary number");
 	delete binaryFSM;
 }
 
@@ -165,13 +150,6 @@ void runHexadecimalNumberFSM(string str)
 		i++;
 	}
 	hexFSM->setFinished();
-	if(hexFSM->getState() == HexadecimalNumberFSM::STATE_VALID)
-	{
-		cout << "Valid hexadecimal number" << endl << endl;
-	}
-	else
-	{
-		cout << "Invalid hexadecimal number" << endl << endl;
-	}
+	showOutput(hexFSM->getState() == HexadecimalNumberFSM::STATE_VALID, "hexadecimal number");
 	delete hexFSM;
 }
