@@ -102,7 +102,7 @@
     <ClCompile Include="DateFSM.cpp" />
     <ClCompile Include="FSM.cpp" />
     <ClCompile Include="HexadecimalNumberFSM.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="PasswordFSM.cpp" />
   </ItemGroup>
   <ItemGroup>

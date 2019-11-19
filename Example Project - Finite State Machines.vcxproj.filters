@@ -27,10 +27,10 @@
     <ClCompile Include="HexadecimalNumberFSM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="PasswordFSM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PasswordFSM.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
