@@ -117,6 +117,9 @@
     <ClInclude Include="Src\fsm\HexadecimalNumberFSM.h" />
     <ClInclude Include="Src\fsm\PasswordFSM.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\App_Screenshot.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
