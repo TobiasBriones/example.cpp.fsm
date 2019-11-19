@@ -26,6 +26,10 @@ void runHexadecimalNumberFSM(string);
 int main(int argc, char** argv) {
 	string str;
 
+	cout << "Example Project - Finite State Machines" << endl;
+	cout << "Several FSMs are presented next" << endl << endl;
+
+	cout << "Date FSM" << endl;
 	cout << "Enter a valid date YYYY/MM/DD" << endl << ">> ";
 	cin >> str;
 
@@ -33,7 +37,7 @@ int main(int argc, char** argv) {
 	runDateAlgorithm(str);
 	// End of Date Algorithm
 
-
+	cout << "Password FSM" << endl;
 	cout << "Enter a valid password [0-9][A-Z]+(#|\*)" << endl << ">> ";
 	cin >> str;
 
@@ -41,21 +45,25 @@ int main(int argc, char** argv) {
 	runPasswordFSM(str);
 	// End of Password FSM
 
-
+	cout << "Binary Number FSM" << endl;
 	cout << "Enter a binary number" << endl << ">> ";
 	cin >> str;
 	// Binary number FSM
 	runBinaryNumberFSM(str);
 	// End of Binary number FSM
 
-
+	cout << "Hexadecimal Number FSM" << endl;
 	cout << "Enter an hexadecimal number" << endl << ">> ";
 	cin >> str;
 	// Hexadecimal number FSM
 	runHexadecimalNumberFSM(str);
 	// End of Hexadecimal number FSM
 
-	cout << "End of the program" << endl;
+	cout << "End of FSM demonstrations";
+	cout << endl << endl << endl;
+	cout << "Great job by studying the Example Projects!" << endl;
+	cout << "Learn more by accessing the Example Projects at https://tobiasbriones.engineer/ or https://github.com/TobiasBriones/";
+	cout << endl << endl << endl;
 	system("pause");
 	return 0;
 }
