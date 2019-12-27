@@ -7,6 +7,6 @@ Finite State Machines implemented are:
 * Date FSM
 * Password (or string regex) FSM
 * Binary Number FSM
-* Hexadecimal FSM
+* Hexadecimal Number FSM
 
 ![/Assets/App_Screenshot.png](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/App_Screenshot.png)
