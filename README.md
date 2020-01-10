@@ -10,3 +10,20 @@ Finite State Machines implemented are:
 * Hexadecimal Number FSM
 
 ![/Assets/App_Screenshot.png](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/App_Screenshot.png)
+
+## Algorithms
+### Date FSM
+![Date FSM part 1](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/Algorithms/Date%20FSM%20part%201.png)
+
+![Date FSM part 2](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/Algorithms/Date%20FSM%20part%202.png)
+
+![Date algorithm](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/Algorithms/Date%20Algorithm.png)
+
+### Password FSM
+![Password FSM algorithm](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/Algorithms/Password%20FSM.png)
+
+### Binary Number FSM
+![Binay Number FSM algorithm](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/Algorithms/Binary%20Number%20FSM.png)
+
+### Hexadecimal Number FSM
+![Hexadecimal Number FSM algorithm](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/Algorithms/Hexadecimal%20FSM.png)
