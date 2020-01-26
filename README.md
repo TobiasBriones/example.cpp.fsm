@@ -9,21 +9,21 @@ Finite State Machines implemented are:
 * Binary Number FSM
 * Hexadecimal Number FSM
 
-![/Assets/App_Screenshot.png](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/App_Screenshot.png)
+[![Screenshot 1](https://raw.githubusercontent.com/TobiasBriones/images/master/example-projects/example.math.computation.model.cpp.fsm/screenshot-1.png)](https://github.com/TobiasBriones/images/tree/master/example-projects)
 
 ## Algorithms
 ### Date FSM
-![Date FSM part 1](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/Algorithms/Date%20FSM%20part%201.png)
+[![Date FSM part 1](https://raw.githubusercontent.com/TobiasBriones/images/master/example-projects/example.math.computation.model.cpp.fsm/algorithms/date-fsm-part-1.png)](https://github.com/TobiasBriones/images/tree/master/example-projects)
 
-![Date FSM part 2](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/Algorithms/Date%20FSM%20part%202.png)
+[![Date FSM part 2](https://raw.githubusercontent.com/TobiasBriones/images/master/example-projects/example.math.computation.model.cpp.fsm/algorithms/date-fsm-part-2.png)](https://github.com/TobiasBriones/images/tree/master/example-projects)
 
-![Date algorithm](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/Algorithms/Date%20Algorithm.png)
+[![Date algorithm](https://raw.githubusercontent.com/TobiasBriones/images/master/example-projects/example.math.computation.model.cpp.fsm/algorithms/date-algorithm.png)](https://github.com/TobiasBriones/images/tree/master/example-projects)
 
 ### Password FSM
-![Password FSM algorithm](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/Algorithms/Password%20FSM.png)
+[![Password FSM algorithm](https://raw.githubusercontent.com/TobiasBriones/images/master/example-projects/example.math.computation.model.cpp.fsm/algorithms/password-fsm.png)](https://github.com/TobiasBriones/images/tree/master/example-projects)
 
 ### Binary Number FSM
-![Binay Number FSM algorithm](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/Algorithms/Binary%20Number%20FSM.png)
+[![Binay Number FSM algorithm](https://raw.githubusercontent.com/TobiasBriones/images/master/example-projects/example.math.computation.model.cpp.fsm/algorithms/binary-number-fsm.png)](https://github.com/TobiasBriones/images/tree/master/example-projects)
 
 ### Hexadecimal Number FSM
-![Hexadecimal Number FSM algorithm](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/Assets/Algorithms/Hexadecimal%20FSM.png)
+[![Hexadecimal Number FSM algorithm](https://raw.githubusercontent.com/TobiasBriones/images/master/example-projects/example.math.computation.model.cpp.fsm/algorithms/hexadecimal-fsm.png)](https://github.com/TobiasBriones/images/tree/master/example-projects)
