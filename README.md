@@ -1,14 +1,15 @@
-# Example Project - Finite State Machines
+# Example Project: Finite State Machines
 [![License](https://img.shields.io/github/license/TobiasBriones/example.math.computation.model.cpp.fsm)](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/LICENSE)
 
 Example Project for creating finite state machines in OO C++.
 
-Finite State Machines implemented are:
+The Finite State Machines implemented are:
 * Date FSM
 * Password (or string regex) FSM
 * Binary Number FSM
 * Hexadecimal Number FSM
 
+## Screenshots
 [![Screenshot 1](https://raw.githubusercontent.com/TobiasBriones/images/master/example-projects/example.math.computation.model.cpp.fsm/screenshot-1.png)](https://github.com/TobiasBriones/images/tree/master/example-projects)
 
 ## Algorithms
@@ -27,3 +28,11 @@ Finite State Machines implemented are:
 
 ### Hexadecimal Number FSM
 [![Hexadecimal Number FSM algorithm](https://raw.githubusercontent.com/TobiasBriones/images/master/example-projects/example.math.computation.model.cpp.fsm/algorithms/hexadecimal-fsm.png)](https://github.com/TobiasBriones/images/tree/master/example-projects)
+
+## License
+Example Project: Finite State Machines
+
+Copyright © 2019 Tobias Briones. All rights reserved.
+
+This software is licensed under the [MIT License](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/LICENSE).
+
