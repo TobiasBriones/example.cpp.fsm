@@ -5,9 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#include "FSM.h"
+#include "Fsm.h"
 
-class BinaryNumberFSM : public FSM
+class BinaryNumberFsm : public Fsm
 {
 
 private:
@@ -21,7 +21,7 @@ public:
 	static const int STATE_VALID;
 	static const int STATE_INVALID;
 
-	BinaryNumberFSM();
+	BinaryNumberFsm();
 
 	void set(char);
 	void reset();

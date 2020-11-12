@@ -7,19 +7,19 @@
 
 #pragma once
 #include <ctype.h>
-#include "FSM.h"
+#include "Fsm.h"
 
-void FSM::setState(int state)
+void Fsm::setState(int state)
 {
 	this->state = state;
 }
 
-int FSM::getState()
+int Fsm::getState()
 {
 	return state;
 }
 
-bool FSM::digitFSM(char digit)
+bool Fsm::digitFsm(char digit)
 {
 	return isdigit(digit);
 }

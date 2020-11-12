@@ -18,65 +18,44 @@
     <ClCompile Include="Src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\fsm\BinaryNumberFSM.cpp">
+    <ClCompile Include="Src\Fsm\HexadecimalNumberFsm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\fsm\DateFSM.cpp">
+    <ClCompile Include="Src\Fsm\PasswordFsm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\fsm\FSM.cpp">
+    <ClCompile Include="Src\Fsm\BinaryNumberFsm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\fsm\HexadecimalNumberFSM.cpp">
+    <ClCompile Include="Src\Fsm\DateFsm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Src\fsm\PasswordFSM.cpp">
+    <ClCompile Include="Src\Fsm\Fsm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Src\fsm\BinaryNumberFSM.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Src\fsm\DateFSM.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Src\fsm\FSM.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Src\fsm\HexadecimalNumberFSM.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Src\fsm\PasswordFSM.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Resources\resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Fsm\Fsm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Fsm\HexadecimalNumberFsm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Fsm\PasswordFsm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Fsm\BinaryNumberFsm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Fsm\DateFsm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Assets\Algorithms\Date Algorithm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Assets\Algorithms\Date FSM part 1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Assets\Algorithms\Date FSM part 2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Assets\Algorithms\Hexadecimal FSM.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Assets\Algorithms\Password FSM.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Assets\Algorithms\Binary Number FSM.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="Assets\Icon.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Assets\App_Screenshot.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

@@ -6,21 +6,21 @@
  */
 
 #include <ctype.h>
-#include "PasswordFSM.h"
+#include "PasswordFsm.h"
 
-const int PasswordFSM::STATE_INITIAL = 0;
-const int PasswordFSM::STATE_S1 = 1;
-const int PasswordFSM::STATE_S2 = 2;
-const int PasswordFSM::STATE_S3 = 3;
-const int PasswordFSM::STATE_INVALID = 4;
-const int PasswordFSM::STATE_VALID = 5;
+const int PasswordFsm::STATE_INITIAL = 0;
+const int PasswordFsm::STATE_S1 = 1;
+const int PasswordFsm::STATE_S2 = 2;
+const int PasswordFsm::STATE_S3 = 3;
+const int PasswordFsm::STATE_INVALID = 4;
+const int PasswordFsm::STATE_VALID = 5;
 
-PasswordFSM::PasswordFSM()
+PasswordFsm::PasswordFsm()
 {
 	reset();
 }
 
-void PasswordFSM::set(char input)
+void PasswordFsm::set(char input)
 {
 	switch (getState())
 	{
@@ -63,12 +63,12 @@ void PasswordFSM::set(char input)
 	}
 }
 
-void PasswordFSM::reset()
+void PasswordFsm::reset()
 {
 	setState(STATE_INITIAL);
 }
 
-void PasswordFSM::setFinished()
+void PasswordFsm::setFinished()
 {
 	if (getState() == STATE_S3)
 	{

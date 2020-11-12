@@ -5,9 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#include "FSM.h"
+#include "Fsm.h"
 
-class DateFSM : public FSM
+class DateFsm : public Fsm
 {
 
 private:
@@ -24,7 +24,7 @@ public:
 	static const int STATE_DATE;
 	static const int STATE_INVALID;
 
-	DateFSM();
+	DateFsm();
 
 	void set(char);
 	void reset();

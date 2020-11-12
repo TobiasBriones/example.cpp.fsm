@@ -7,7 +7,7 @@
 
 #pragma once
 
-class FSM
+class Fsm
 {
 
 private:
@@ -15,7 +15,7 @@ private:
 
 protected:
 	void setState(int);
-	bool digitFSM(char);
+	bool digitFsm(char);
 
 public:
 	int getState();

@@ -6,16 +6,16 @@
  */
 
 #include <ctype.h>
-#include "HexadecimalNumberFSM.h"
+#include "HexadecimalNumberFsm.h"
 
-const int HexadecimalNumberFSM::STATE_S0 = 0;
-const int HexadecimalNumberFSM::STATE_S1 = 1;
-const int HexadecimalNumberFSM::STATE_S2 = 2;
-const int HexadecimalNumberFSM::STATE_T1 = 3;
-const int HexadecimalNumberFSM::STATE_VALID = 4;
-const int HexadecimalNumberFSM::STATE_INVALID = 5;
+const int HexadecimalNumberFsm::STATE_S0 = 0;
+const int HexadecimalNumberFsm::STATE_S1 = 1;
+const int HexadecimalNumberFsm::STATE_S2 = 2;
+const int HexadecimalNumberFsm::STATE_T1 = 3;
+const int HexadecimalNumberFsm::STATE_VALID = 4;
+const int HexadecimalNumberFsm::STATE_INVALID = 5;
 
-HexadecimalNumberFSM::HexadecimalNumberFSM()
+HexadecimalNumberFsm::HexadecimalNumberFsm()
 {
 	reset();
 }
@@ -23,7 +23,7 @@ HexadecimalNumberFSM::HexadecimalNumberFSM()
 /*
 	Returns true iff ch represents an hexadecimal digit 0-F, case insensitive.
 */
-bool HexadecimalNumberFSM::isHexDigit(char ch)
+bool HexadecimalNumberFsm::isHexDigit(char ch)
 {
 	return isdigit(ch) || ch == 'a' || ch == 'A'
 		|| ch == 'b' || ch == 'B'
@@ -33,7 +33,7 @@ bool HexadecimalNumberFSM::isHexDigit(char ch)
 		|| ch == 'f' || ch == 'F';
 }
 
-void HexadecimalNumberFSM::set(char input)
+void HexadecimalNumberFsm::set(char input)
 {
 	switch (getState())
 	{
@@ -92,12 +92,12 @@ void HexadecimalNumberFSM::set(char input)
 	}
 }
 
-void HexadecimalNumberFSM::reset()
+void HexadecimalNumberFsm::reset()
 {
 	setState(STATE_S0);
 }
 
-void HexadecimalNumberFSM::setFinished()
+void HexadecimalNumberFsm::setFinished()
 {
 	switch (getState())
 	{

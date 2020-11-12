@@ -5,9 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#include "FSM.h"
+#include "Fsm.h"
 
-class PasswordFSM : public FSM
+class PasswordFsm : public Fsm
 {
 
 public:
@@ -18,7 +18,7 @@ public:
 	static const int STATE_INVALID;
 	static const int STATE_VALID;
 
-	PasswordFSM();
+	PasswordFsm();
 
 	void set(char);
 	void reset();

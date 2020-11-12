@@ -5,22 +5,22 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#include "DateFSM.h"
+#include "DateFsm.h"
 
-const int DateFSM::DATE_LENGTH = 10;
-const int DateFSM::STATE_YEAR = 0;
-const int DateFSM::STATE_MONTH = 1;
-const int DateFSM::STATE_DAY = 2;
-const int DateFSM::STATE_SLASH = 3;
-const int DateFSM::STATE_DATE = 4;
-const int DateFSM::STATE_INVALID = 5;
+const int DateFsm::DATE_LENGTH = 10;
+const int DateFsm::STATE_YEAR = 0;
+const int DateFsm::STATE_MONTH = 1;
+const int DateFsm::STATE_DAY = 2;
+const int DateFsm::STATE_SLASH = 3;
+const int DateFsm::STATE_DATE = 4;
+const int DateFsm::STATE_INVALID = 5;
 
-DateFSM::DateFSM()
+DateFsm::DateFsm()
 {
 	reset();
 }
 
-void DateFSM::set(char input)
+void DateFsm::set(char input)
 {
 	int state = getState();
 
@@ -57,7 +57,7 @@ void DateFSM::set(char input)
 	// Checking for all states depending on digits 0-9
 	i++;
 
-	if (!digitFSM(input))
+	if (!digitFsm(input))
 	{
 		setState(STATE_INVALID);
 		return;
@@ -85,7 +85,7 @@ void DateFSM::set(char input)
 	}
 }
 
-void DateFSM::reset()
+void DateFsm::reset()
 {
 	setState(STATE_YEAR);
 	i = 0;

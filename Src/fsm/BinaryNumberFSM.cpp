@@ -5,16 +5,16 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#include "BinaryNumberFSM.h"
+#include "BinaryNumberFsm.h"
 
-const int BinaryNumberFSM::STATE_S0 = 0;
-const int BinaryNumberFSM::STATE_S1 = 1;
-const int BinaryNumberFSM::STATE_DOT = 2;
-const int BinaryNumberFSM::STATE_S3 = 3;
-const int BinaryNumberFSM::STATE_VALID = 4;
-const int BinaryNumberFSM::STATE_INVALID = 5;
+const int BinaryNumberFsm::STATE_S0 = 0;
+const int BinaryNumberFsm::STATE_S1 = 1;
+const int BinaryNumberFsm::STATE_DOT = 2;
+const int BinaryNumberFsm::STATE_S3 = 3;
+const int BinaryNumberFsm::STATE_VALID = 4;
+const int BinaryNumberFsm::STATE_INVALID = 5;
 
-BinaryNumberFSM::BinaryNumberFSM()
+BinaryNumberFsm::BinaryNumberFsm()
 {
 	reset();
 }
@@ -22,12 +22,12 @@ BinaryNumberFSM::BinaryNumberFSM()
 /*
 	Returns true iff ch represents either the number 0 or 1.
 */
-bool BinaryNumberFSM::isBinaryDigit(char ch)
+bool BinaryNumberFsm::isBinaryDigit(char ch)
 {
 	return ch == 48 || ch == 49;
 }
 
-void BinaryNumberFSM::set(char input)
+void BinaryNumberFsm::set(char input)
 {
 	switch (getState())
 	{
@@ -73,12 +73,12 @@ void BinaryNumberFSM::set(char input)
 	}
 }
 
-void BinaryNumberFSM::reset()
+void BinaryNumberFsm::reset()
 {
 	setState(STATE_S0);
 }
 
-void BinaryNumberFSM::setFinished()
+void BinaryNumberFsm::setFinished()
 {
 	switch (getState())
 	{
