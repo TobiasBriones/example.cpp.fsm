@@ -6,20 +6,21 @@
  */
 
 #pragma once
+
 #include <ctype.h>
 #include "Fsm.h"
 
 void Fsm::setState(int state)
 {
-	this->state = state;
+    this->state = state;
 }
 
 int Fsm::getState()
 {
-	return state;
+    return state;
 }
 
 bool Fsm::digitFsm(char digit)
 {
-	return isdigit(digit);
+    return isdigit(digit);
 }

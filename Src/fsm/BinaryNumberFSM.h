@@ -11,20 +11,21 @@ class BinaryNumberFsm : public Fsm
 {
 
 private:
-	bool isBinaryDigit(char);
+    bool isBinaryDigit(char);
 
 public:
-	static const int STATE_S0;
-	static const int STATE_S1;
-	static const int STATE_DOT;
-	static const int STATE_S3;
-	static const int STATE_VALID;
-	static const int STATE_INVALID;
+    static const int STATE_S0;
+    static const int STATE_S1;
+    static const int STATE_DOT;
+    static const int STATE_S3;
+    static const int STATE_VALID;
+    static const int STATE_INVALID;
 
-	BinaryNumberFsm();
+    BinaryNumberFsm();
 
-	void set(char);
-	void reset();
-	void setFinished();
+    void set(char);
 
+    void reset();
+
+    void setFinished();
 };

@@ -16,7 +16,7 @@ const int BinaryNumberFsm::STATE_INVALID = 5;
 
 BinaryNumberFsm::BinaryNumberFsm()
 {
-	reset();
+    reset();
 }
 
 /*
@@ -24,78 +24,78 @@ BinaryNumberFsm::BinaryNumberFsm()
 */
 bool BinaryNumberFsm::isBinaryDigit(char ch)
 {
-	return ch == 48 || ch == 49;
+    return ch == 48 || ch == 49;
 }
 
 void BinaryNumberFsm::set(char input)
 {
-	switch (getState())
-	{
-	case STATE_S0:
-		if (isBinaryDigit(input))
-		{
-			setState(STATE_S1);
-		}
-		else
-		{
-			setState(STATE_INVALID);
-		}
-		break;
+    switch (getState())
+    {
+        case STATE_S0:
+            if (isBinaryDigit(input))
+            {
+                setState(STATE_S1);
+            }
+            else
+            {
+                setState(STATE_INVALID);
+            }
+            break;
 
-	case STATE_S1:
-		if (input == '.')
-		{
-			setState(STATE_DOT);
-		}
-		else if (!isBinaryDigit(input))
-		{
-			setState(STATE_INVALID);
-		}
-		break;
+        case STATE_S1:
+            if (input == '.')
+            {
+                setState(STATE_DOT);
+            }
+            else if (!isBinaryDigit(input))
+            {
+                setState(STATE_INVALID);
+            }
+            break;
 
-	case STATE_DOT:
-		if (isBinaryDigit(input))
-		{
-			setState(STATE_S3);
-		}
-		else
-		{
-			setState(STATE_INVALID);
-		}
-		break;
+        case STATE_DOT:
+            if (isBinaryDigit(input))
+            {
+                setState(STATE_S3);
+            }
+            else
+            {
+                setState(STATE_INVALID);
+            }
+            break;
 
-	case STATE_S3:
-		if (!isBinaryDigit(input))
-		{
-			setState(STATE_INVALID);
-		}
-		break;
-	}
+        case STATE_S3:
+            if (!isBinaryDigit(input))
+            {
+                setState(STATE_INVALID);
+            }
+            break;
+    }
 }
 
 void BinaryNumberFsm::reset()
 {
-	setState(STATE_S0);
+    setState(STATE_S0);
 }
 
 void BinaryNumberFsm::setFinished()
 {
-	switch (getState())
-	{
-	case STATE_S0:
-		setState(STATE_INVALID);
-		break;
+    switch (getState())
+    {
+        case STATE_S0:
+            setState(STATE_INVALID);
+            break;
 
-	case STATE_S1:
-		setState(STATE_VALID);
-		break;
+        case STATE_S1:
+            setState(STATE_VALID);
+            break;
 
-	case STATE_DOT:
-		setState(STATE_INVALID);
-		break;
+        case STATE_DOT:
+            setState(STATE_INVALID);
+            break;
 
-	case STATE_S3:
-		setState(STATE_VALID);
-		break;
-	}
+        case STATE_S3:
+            setState(STATE_VALID);
+            break;
+    }
 }

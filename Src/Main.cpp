@@ -18,149 +18,152 @@ using std::cin;
 using std::endl;
 
 void showOutput(bool, string);
+
 void runDateAlgorithm(string);
 void runPasswordFsm(string);
 void runBinaryNumberFsm(string);
 void runHexadecimalNumberFsm(string);
 
-int main(int argc, char** argv) {
-	string str;
+int main(int argc, char** argv)
+{
+    string str;
 
-	cout << "Example Project - Finite State Machines" << endl;
-	cout << "Several Fsms are presented next" << endl << endl;
+    cout << "Example Project - Finite State Machines" << endl;
+    cout << "Several FSMs are presented next" << endl << endl;
 
-	cout << "Date Fsm" << endl;
-	cout << "Enter a valid date YYYY/MM/DD" << endl << ">> ";
-	cin >> str;
+    cout << "Date Fsm" << endl;
+    cout << "Enter a valid date YYYY/MM/DD" << endl << ">> ";
+    cin >> str;
 
-	// Date Algorithm
-	runDateAlgorithm(str);
-	// End of Date Algorithm
+    // Date Algorithm
+    runDateAlgorithm(str);
+    // End of Date Algorithm
 
-	cout << "Password Fsm" << endl;
-	cout << "Enter a valid password [0-9][A-Z]+(#|\*)" << endl << ">> ";
-	cin >> str;
+    cout << "Password Fsm" << endl;
+    cout << "Enter a valid password [0-9][A-Z]+(#|\*)" << endl << ">> ";
+    cin >> str;
 
-	// Password Fsm
-	runPasswordFsm(str);
-	// End of Password Fsm
+    // Password Fsm
+    runPasswordFsm(str);
+    // End of Password Fsm
 
-	cout << "Binary Number Fsm" << endl;
-	cout << "Enter a binary number" << endl << ">> ";
-	cin >> str;
-	// Binary number Fsm
-	runBinaryNumberFsm(str);
-	// End of Binary number Fsm
+    cout << "Binary Number Fsm" << endl;
+    cout << "Enter a binary number" << endl << ">> ";
+    cin >> str;
+    // Binary number Fsm
+    runBinaryNumberFsm(str);
+    // End of Binary number Fsm
 
-	cout << "Hexadecimal Number Fsm" << endl;
-	cout << "Enter an hexadecimal number" << endl << ">> ";
-	cin >> str;
-	// Hexadecimal number Fsm
-	runHexadecimalNumberFsm(str);
-	// End of Hexadecimal number Fsm
+    cout << "Hexadecimal Number Fsm" << endl;
+    cout << "Enter an hexadecimal number" << endl << ">> ";
+    cin >> str;
+    // Hexadecimal number Fsm
+    runHexadecimalNumberFsm(str);
+    // End of Hexadecimal number Fsm
 
-	cout << "End of Fsm demonstrations";
-	cout << endl << endl << endl;
-	cout << "Great job by studying the Example Projects!" << endl;
-	cout << "Learn more by accessing the Example Projects at https://tobiasbriones.engineer/ or https://github.com/TobiasBriones/";
-	cout << endl << endl << endl;
-	system("pause");
-	return 0;
+    cout << "End of Fsm demonstrations";
+    cout << endl << endl << endl;
+    cout << "Great job by studying the Example Projects!" << endl;
+    cout << "Learn more by accessing the Example Projects at https://tobiasbriones.engineer/ or https://github"
+            ".com/TobiasBriones/";
+    cout << endl << endl << endl;
+    system("pause");
+    return 0;
 }
 
 void showOutput(bool value, string concat)
 {
-	string str = "";
+    string str = "";
 
-	str += value ? "Valid " : "Invalid ";
-	str += concat;
-	cout << str << endl << endl;
+    str += value ? "Valid " : "Invalid ";
+    str += concat;
+    cout << str << endl << endl;
 }
 
 void runDateAlgorithm(string dateStr)
 {
-	if (dateStr.length() != DateFsm::DATE_LENGTH)
-	{
-		showOutput(false, "date");
-		return;
-	}
-	DateFsm* dateFsm = new DateFsm();
-	int i = 0;
+    if (dateStr.length() != DateFsm::DATE_LENGTH)
+    {
+        showOutput(false, "date");
+        return;
+    }
+    DateFsm* dateFsm = new DateFsm();
+    int i = 0;
 
-	while (i < dateStr.length())
-	{
-		dateFsm->set(dateStr[i]);
+    while (i < dateStr.length())
+    {
+        dateFsm->set(dateStr[i]);
 
-		// Early exit if invalid date
-		if (dateFsm->getState() == DateFsm::STATE_INVALID)
-		{
-			break;
-		}
-		i++;
-	}
-	showOutput(dateFsm->getState() == DateFsm::STATE_DATE, "date");
-	delete dateFsm;
+        // Early exit if invalid date
+        if (dateFsm->getState() == DateFsm::STATE_INVALID)
+        {
+            break;
+        }
+        i++;
+    }
+    showOutput(dateFsm->getState() == DateFsm::STATE_DATE, "date");
+    delete dateFsm;
 }
 
 void runPasswordFsm(string pwd)
 {
-	PasswordFsm* pwdFsm = new PasswordFsm();
-	int i = 0;
+    PasswordFsm* pwdFsm = new PasswordFsm();
+    int i = 0;
 
-	while (i < pwd.length())
-	{
-		pwdFsm->set(pwd[i]);
+    while (i < pwd.length())
+    {
+        pwdFsm->set(pwd[i]);
 
-		// Early exit if invalid password
-		if (pwdFsm->getState() == PasswordFsm::STATE_INVALID)
-		{
-			break;
-		}
-		i++;
-	}
-	pwdFsm->setFinished();
-	showOutput(pwdFsm->getState() == PasswordFsm::STATE_VALID, "password");
-	delete pwdFsm;
+        // Early exit if invalid password
+        if (pwdFsm->getState() == PasswordFsm::STATE_INVALID)
+        {
+            break;
+        }
+        i++;
+    }
+    pwdFsm->setFinished();
+    showOutput(pwdFsm->getState() == PasswordFsm::STATE_VALID, "password");
+    delete pwdFsm;
 }
 
 void runBinaryNumberFsm(string str)
 {
-	BinaryNumberFsm* binaryFsm = new BinaryNumberFsm();
-	int i = 0;
+    BinaryNumberFsm* binaryFsm = new BinaryNumberFsm();
+    int i = 0;
 
-	while (i < str.length())
-	{
-		binaryFsm->set(str[i]);
+    while (i < str.length())
+    {
+        binaryFsm->set(str[i]);
 
-		// Early exit if invalid binary number
-		if (binaryFsm->getState() == BinaryNumberFsm::STATE_INVALID)
-		{
-			break;
-		}
-		i++;
-	}
-	binaryFsm->setFinished();
-	showOutput(binaryFsm->getState() == BinaryNumberFsm::STATE_VALID, "binary number");
-	delete binaryFsm;
+        // Early exit if invalid binary number
+        if (binaryFsm->getState() == BinaryNumberFsm::STATE_INVALID)
+        {
+            break;
+        }
+        i++;
+    }
+    binaryFsm->setFinished();
+    showOutput(binaryFsm->getState() == BinaryNumberFsm::STATE_VALID, "binary number");
+    delete binaryFsm;
 }
 
 void runHexadecimalNumberFsm(string str)
 {
-	HexadecimalNumberFsm* hexFsm = new HexadecimalNumberFsm();
-	int i = 0;
+    HexadecimalNumberFsm* hexFsm = new HexadecimalNumberFsm();
+    int i = 0;
 
-	while (i < str.length())
-	{
-		hexFsm->set(str[i]);
+    while (i < str.length())
+    {
+        hexFsm->set(str[i]);
 
-		// Early exit if invalid binary number
-		if (hexFsm->getState() == HexadecimalNumberFsm::STATE_INVALID)
-		{
-			break;
-		}
-		i++;
-	}
-	hexFsm->setFinished();
-	showOutput(hexFsm->getState() == HexadecimalNumberFsm::STATE_VALID, "hexadecimal number");
-	delete hexFsm;
+        // Early exit if invalid binary number
+        if (hexFsm->getState() == HexadecimalNumberFsm::STATE_INVALID)
+        {
+            break;
+        }
+        i++;
+    }
+    hexFsm->setFinished();
+    showOutput(hexFsm->getState() == HexadecimalNumberFsm::STATE_VALID, "hexadecimal number");
+    delete hexFsm;
 }

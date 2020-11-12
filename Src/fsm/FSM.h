@@ -11,15 +11,17 @@ class Fsm
 {
 
 private:
-	int state;
+    int state;
 
 protected:
-	void setState(int);
-	bool digitFsm(char);
+    void setState(int);
+
+    bool digitFsm(char);
 
 public:
-	int getState();
-	virtual void set(char) = 0;
-	virtual void reset() = 0;
+    int getState();
 
+    virtual void set(char) = 0;
+
+    virtual void reset() = 0;
 };

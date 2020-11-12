@@ -11,17 +11,18 @@ class PasswordFsm : public Fsm
 {
 
 public:
-	static const int STATE_INITIAL;
-	static const int STATE_S1;
-	static const int STATE_S2;
-	static const int STATE_S3;
-	static const int STATE_INVALID;
-	static const int STATE_VALID;
+    static const int STATE_INITIAL;
+    static const int STATE_S1;
+    static const int STATE_S2;
+    static const int STATE_S3;
+    static const int STATE_INVALID;
+    static const int STATE_VALID;
 
-	PasswordFsm();
+    PasswordFsm();
 
-	void set(char);
-	void reset();
-	void setFinished();
+    void set(char);
 
+    void reset();
+
+    void setFinished();
 };
