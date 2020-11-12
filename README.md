@@ -1,7 +1,7 @@
 # Example Project: Finite State Machines
 [![License](https://img.shields.io/github/license/TobiasBriones/example.math.computation.model.cpp.fsm)](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/LICENSE)
 
-Example Project for creating finite state machines in OO C++.
+Example Project for creating finite state machines in OO C++. This initial code still needs some improvements, I'll be back when I had to work with other C++ projects in order to make use of more C++ skills. More FSMs will be added later.
 
 The Finite State Machines implemented are:
 * Date FSM
@@ -32,7 +32,7 @@ The Finite State Machines implemented are:
 ## License
 Example Project: Finite State Machines
 
-Copyright © 2019 Tobias Briones. All rights reserved.
+Copyright © 2019-2020 Tobias Briones. All rights reserved.
 
 This software is licensed under the [MIT License](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/master/LICENSE).
 
