@@ -11,7 +11,9 @@ class DateFsm : public Fsm
 {
 
 private:
-    int i;
+    int i{};
+
+    void initValues();
 
 public:
 
@@ -26,7 +28,7 @@ public:
 
     DateFsm();
 
-    void set(char);
+    void set(char) override;
 
-    void reset();
+    void reset() override;
 };

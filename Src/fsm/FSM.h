@@ -7,6 +7,8 @@
 
 #pragma once
 
+#include <cctype>
+
 class Fsm
 {
 
@@ -16,10 +18,12 @@ private:
 protected:
     void setState(int);
 
-    bool digitFsm(char);
+    static bool digitFsm(char);
 
 public:
-    int getState();
+    Fsm();
+
+    int getState() const;
 
     virtual void set(char) = 0;
 

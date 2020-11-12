@@ -5,10 +5,14 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+#include <cctype>
 #include "Fsm.h"
 
 class PasswordFsm : public Fsm
 {
+
+private:
+    void initValues();
 
 public:
     static const int STATE_INITIAL;
@@ -20,9 +24,9 @@ public:
 
     PasswordFsm();
 
-    void set(char);
+    void set(char) override;
 
-    void reset();
+    void reset() override;
 
     void setFinished();
 };

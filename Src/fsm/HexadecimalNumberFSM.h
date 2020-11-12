@@ -5,13 +5,15 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+#include <cctype>
 #include "Fsm.h"
 
 class HexadecimalNumberFsm : public Fsm
 {
 
 private:
-    bool isHexDigit(char);
+    void initValues();
+    static bool isHexDigit(char);
 
 public:
     static const int STATE_S0;
@@ -23,9 +25,9 @@ public:
 
     HexadecimalNumberFsm();
 
-    void set(char);
+    void set(char) override;
 
-    void reset();
+    void reset() override;
 
     void setFinished();
 };

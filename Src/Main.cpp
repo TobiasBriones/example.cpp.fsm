@@ -17,7 +17,7 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-void showOutput(bool, string);
+void showOutput(bool, const string&);
 
 void runDateAlgorithm(string);
 void runPasswordFsm(string);
@@ -71,9 +71,9 @@ int main(int argc, char** argv)
     return 0;
 }
 
-void showOutput(bool value, string concat)
+void showOutput(bool value, const string& concat)
 {
-    string str = "";
+    string str;
 
     str += value ? "Valid " : "Invalid ";
     str += concat;
@@ -87,7 +87,7 @@ void runDateAlgorithm(string dateStr)
         showOutput(false, "date");
         return;
     }
-    DateFsm* dateFsm = new DateFsm();
+    auto* dateFsm = new DateFsm();
     int i = 0;
 
     while (i < dateStr.length())
@@ -107,7 +107,7 @@ void runDateAlgorithm(string dateStr)
 
 void runPasswordFsm(string pwd)
 {
-    PasswordFsm* pwdFsm = new PasswordFsm();
+    auto* pwdFsm = new PasswordFsm();
     int i = 0;
 
     while (i < pwd.length())
@@ -128,7 +128,7 @@ void runPasswordFsm(string pwd)
 
 void runBinaryNumberFsm(string str)
 {
-    BinaryNumberFsm* binaryFsm = new BinaryNumberFsm();
+    auto* binaryFsm = new BinaryNumberFsm();
     int i = 0;
 
     while (i < str.length())
@@ -149,7 +149,7 @@ void runBinaryNumberFsm(string str)
 
 void runHexadecimalNumberFsm(string str)
 {
-    HexadecimalNumberFsm* hexFsm = new HexadecimalNumberFsm();
+    auto* hexFsm = new HexadecimalNumberFsm();
     int i = 0;
 
     while (i < str.length())

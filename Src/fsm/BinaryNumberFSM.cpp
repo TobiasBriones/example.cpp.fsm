@@ -16,12 +16,14 @@ const int BinaryNumberFsm::STATE_INVALID = 5;
 
 BinaryNumberFsm::BinaryNumberFsm()
 {
-    reset();
+    initValues();
 }
 
-/*
-	Returns true iff ch represents either the number 0 or 1.
-*/
+void BinaryNumberFsm::initValues()
+{
+    setState(STATE_S0);
+}
+
 bool BinaryNumberFsm::isBinaryDigit(char ch)
 {
     return ch == 48 || ch == 49;
@@ -75,7 +77,7 @@ void BinaryNumberFsm::set(char input)
 
 void BinaryNumberFsm::reset()
 {
-    setState(STATE_S0);
+    initValues();
 }
 
 void BinaryNumberFsm::setFinished()

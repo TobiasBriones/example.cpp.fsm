@@ -17,7 +17,13 @@ const int DateFsm::STATE_INVALID = 5;
 
 DateFsm::DateFsm()
 {
-    reset();
+    initValues();
+}
+
+void DateFsm::initValues()
+{
+    setState(STATE_YEAR);
+    i = 0;
 }
 
 void DateFsm::set(char input)
@@ -63,7 +69,7 @@ void DateFsm::set(char input)
         return;
     }
 
-    // If it's exiting a state then slahs '/' migth be required
+    // If it's exiting a state then slash '/' might be required
     if (i == 4 || i == 6)
     {
         setState(STATE_SLASH);
@@ -87,6 +93,5 @@ void DateFsm::set(char input)
 
 void DateFsm::reset()
 {
-    setState(STATE_YEAR);
-    i = 0;
+    initValues();
 }

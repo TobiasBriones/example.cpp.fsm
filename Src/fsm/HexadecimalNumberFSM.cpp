@@ -5,7 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#include <ctype.h>
 #include "HexadecimalNumberFsm.h"
 
 const int HexadecimalNumberFsm::STATE_S0 = 0;
@@ -17,12 +16,14 @@ const int HexadecimalNumberFsm::STATE_INVALID = 5;
 
 HexadecimalNumberFsm::HexadecimalNumberFsm()
 {
-    reset();
+    initValues();
 }
 
-/*
-	Returns true iff ch represents an hexadecimal digit 0-F, case insensitive.
-*/
+void HexadecimalNumberFsm::initValues()
+{
+    setState(STATE_S0);
+}
+
 bool HexadecimalNumberFsm::isHexDigit(char ch)
 {
     return isdigit(ch) || ch == 'a' || ch == 'A'
@@ -94,7 +95,7 @@ void HexadecimalNumberFsm::set(char input)
 
 void HexadecimalNumberFsm::reset()
 {
-    setState(STATE_S0);
+    initValues();
 }
 
 void HexadecimalNumberFsm::setFinished()
@@ -102,11 +103,8 @@ void HexadecimalNumberFsm::setFinished()
     switch (getState())
     {
         case STATE_S0:
-            setState(STATE_INVALID);
-            break;
-
         case STATE_S1:
-            setState(STATE_VALID);
+            setState(STATE_INVALID);
             break;
 
         case STATE_S2:

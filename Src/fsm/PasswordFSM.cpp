@@ -5,7 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#include <ctype.h>
 #include "PasswordFsm.h"
 
 const int PasswordFsm::STATE_INITIAL = 0;
@@ -17,7 +16,12 @@ const int PasswordFsm::STATE_VALID = 5;
 
 PasswordFsm::PasswordFsm()
 {
-    reset();
+    initValues();
+}
+
+void PasswordFsm::initValues()
+{
+    setState(STATE_INITIAL);
 }
 
 void PasswordFsm::set(char input)
@@ -65,7 +69,7 @@ void PasswordFsm::set(char input)
 
 void PasswordFsm::reset()
 {
-    setState(STATE_INITIAL);
+    initValues();
 }
 
 void PasswordFsm::setFinished()

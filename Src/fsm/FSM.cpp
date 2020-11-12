@@ -7,15 +7,19 @@
 
 #pragma once
 
-#include <ctype.h>
 #include "Fsm.h"
 
-void Fsm::setState(int state)
+Fsm::Fsm()
 {
-    this->state = state;
+    this->state = 0;
 }
 
-int Fsm::getState()
+void Fsm::setState(int value)
+{
+    this->state = value;
+}
+
+int Fsm::getState() const
 {
     return state;
 }

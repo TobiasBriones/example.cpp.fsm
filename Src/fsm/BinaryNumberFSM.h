@@ -11,7 +11,8 @@ class BinaryNumberFsm : public Fsm
 {
 
 private:
-    bool isBinaryDigit(char);
+    void initValues();
+    static bool isBinaryDigit(char);
 
 public:
     static const int STATE_S0;
@@ -23,9 +24,9 @@ public:
 
     BinaryNumberFsm();
 
-    void set(char);
+    void set(char) override;
 
-    void reset();
+    void reset() override;
 
     void setFinished();
 };
