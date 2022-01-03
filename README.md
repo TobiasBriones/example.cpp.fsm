@@ -1,14 +1,14 @@
-# Example Project: Finite State Machines
+# Example Project: Finite State Machines in CPP
 
-[![EP](https://raw.githubusercontent.com/TobiasBriones/images/main/example-projects/example.math.computation.model.cpp.fsm/ep-fsm-badge.svg)](https://tobiasbriones.github.io/example-project/ep/fsm)
+[![Project](https://raw.githubusercontent.com/tobiasbriones/ep-fsm-in-cpp/static/badge.svg)](https://dev.mathsoftware.engineer/ep-fsm-in-cpp/)
 &nbsp;
-[![GitHub Repository](https://raw.githubusercontent.com/TobiasBriones/general-images/main/example-projects/badges/ep-gh-repo-badge.svg)](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm)
+[![GitHub Repository](https://raw.githubusercontent.com/tobiasbriones/static/main/gh-badge.svg)](https://github.com/tobiasbriones/ep-fsm-in-cpp)
 
-[![Project GitHub License](https://img.shields.io/github/license/TobiasBriones/example.math.computation.model.cpp.fsm.svg?style=flat-square)](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm/blob/main/LICENSE)
+[![GitHub Project License](https://img.shields.io/github/license/tobiasbriones/ep-fsm-in-cpp.svg?style=flat-square)](https://github.com/tobiasbriones/ep-fsm-in-cpp/blob/main/LICENSE)
 
-Example Project for creating finite state machines in OO C++. This initial code still needs some
-improvements, I'll be back when I had to work with other C++ projects in order to make use of more
-C++ skills. More FSMs will be added later.
+Example Project for creating finite state machines in OO C++. This initial code
+still needs some improvements, I'll be back when I had to work with other C++
+projects in order to make use of more C++ skills. More FSMs will be added later.
 
 The Finite State Machines implemented are:
 
@@ -19,37 +19,36 @@ The Finite State Machines implemented are:
 
 ## Screenshots
 
-[![Screenshot 1](https://raw.githubusercontent.com/TobiasBriones/images/main/example-projects/example.math.computation.model.cpp.fsm/screenshot-1.png)](https://github.com/TobiasBriones/images/tree/main/example-projects)
+![Screenshot 1](https://github.com/tobiasbriones/ep-fsm-in-cpp/releases/download/v1.0.0/screenshot-1.png)
 
 ## Algorithms
 
 ### Date FSM
 
-[![Date FSM part 1](https://raw.githubusercontent.com/TobiasBriones/images/main/example-projects/example.math.computation.model.cpp.fsm/algorithms/date-fsm-part-1.png)](https://github.com/TobiasBriones/images/tree/main/example-projects)
+![Date FSM part 1](./Docs/algorithms/date-fsm-part-1.png)
 
-[![Date FSM part 2](https://raw.githubusercontent.com/TobiasBriones/images/main/example-projects/example.math.computation.model.cpp.fsm/algorithms/date-fsm-part-2.png)](https://github.com/TobiasBriones/images/tree/main/example-projects)
+![Date FSM part 2](./Docs/algorithms/date-fsm-part-2.png)
 
-[![Date algorithm](https://raw.githubusercontent.com/TobiasBriones/images/main/example-projects/example.math.computation.model.cpp.fsm/algorithms/date-algorithm.png)](https://github.com/TobiasBriones/images/tree/main/example-projects)
+![Date algorithm](./Docs/algorithms/date-algorithm.png)
 
 ### Password FSM
 
-[![Password FSM algorithm](https://raw.githubusercontent.com/TobiasBriones/images/main/example-projects/example.math.computation.model.cpp.fsm/algorithms/password-fsm.png)](https://github.com/TobiasBriones/images/tree/main/example-projects)
+![Password FSM algorithm](./Docs/algorithms/password-fsm.png)
 
 ### Binary Number FSM
 
-[![Binary Number FSM algorithm](https://raw.githubusercontent.com/TobiasBriones/images/main/example-projects/example.math.computation.model.cpp.fsm/algorithms/binary-number-fsm.png)](https://github.com/TobiasBriones/images/tree/main/example-projects)
+![Binary Number FSM algorithm](./Docs/algorithms/binary-number-fsm.png)
 
 ### Hexadecimal Number FSM
 
-[![Hexadecimal Number FSM algorithm](https://raw.githubusercontent.com/TobiasBriones/images/main/example-projects/example.math.computation.model.cpp.fsm/algorithms/hexadecimal-fsm.png)](https://github.com/TobiasBriones/images/tree/main/example-projects)
+![Hexadecimal Number FSM algorithm](./Docs/algorithms/hexadecimal-fsm.png)
 
 ## Contact
 
-This software: [GitHub Repository](https://github.com/TobiasBriones/example.math.computation.model.cpp.fsm)
+This
+project: [GitHub Repository](https://github.com/tobiasbriones/ep-fsm-in-cpp)
 
-Tobias Briones: [GitHub](https://github.com/TobiasBriones)
-
-Example Project: [App](https://tobiasbriones.github.io/example-project)
+Tobias Briones: [GitHub](https://github.com/tobiasbriones)
 
 ## About
 
