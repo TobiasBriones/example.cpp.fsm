@@ -2,7 +2,7 @@
 
 [![Project](https://raw.githubusercontent.com/tobiasbriones/ep-fsm-in-cpp/static/badge.svg)](https://dev.mathsoftware.engineer/ep-fsm-in-cpp/)
 &nbsp;
-[![GitHub Repository](https://raw.githubusercontent.com/tobiasbriones/static/main/gh-badge.svg)](https://github.com/tobiasbriones/ep-fsm-in-cpp)
+[![GitHub Repository](https://img.shields.io/static/v1?label=GITHUB&message=REPOSITORY&labelColor=555&color=0277bd&style=for-the-badge&logo=GITHUB)](https://github.com/tobiasbriones/ep-fsm-in-cpp)
 
 [![GitHub Project License](https://img.shields.io/github/license/tobiasbriones/ep-fsm-in-cpp.svg?style=flat-square)](https://github.com/tobiasbriones/ep-fsm-in-cpp/blob/main/LICENSE)
 
